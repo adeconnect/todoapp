@@ -40,7 +40,7 @@ app.get('/', (req, res) => {
 
 
 app.post('/add', (req, res) => {
- const userId = /* get the user ID from the request or session */;
+ const userId = 1;
  const text = req.body.text;
  const query = 'INSERT INTO todos (user_id, text) VALUES (?, ?)';
  connection.query(query, [userId, text], (err, result) => {
